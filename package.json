@@ -29,7 +29,10 @@
 		"prepare": "husky install",
 		"lint": "eslint '*/**/*.{js,ts,tsx}'",
 		"prettier-write": "prettier --write",
-		"prettier-check": "prettier --check"
+		"prettier-check": "prettier --check",
+		"release": "standard-version --releaseCommitMessageFormat=\"chore(release): {{currentTag}} [ci skip]\"",
+		"release:pre": "standard-version --prerelease --releaseCommitMessageFormat=\"chore(release): {{currentTag}} [ci skip]\"",
+		"release:alpha": "standard-version --prerelease alpha"
 	},
 	"dependencies": {
 		"@stencil/core": "^2.13.0"
@@ -58,7 +61,8 @@
 		"lint-staged": "^13.1.0",
 		"prettier": "^2.8.1",
 		"prettier-eslint": "^15.0.1",
-		"puppeteer": "^10.0.0"
+		"puppeteer": "^10.0.0",
+		"standard-version": "^9.5.0"
 	},
 	"license": "MIT"
 }
