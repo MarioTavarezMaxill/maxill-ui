@@ -4,6 +4,9 @@ module.exports = {
 		'@storybook/addon-links',
 		'@storybook/addon-essentials',
 		'@storybook/addon-interactions',
+		'@storybook/addon-notes',
+		'@storybook/addon-knobs',
+		'storybook-addon-stencil',
 	],
 	framework: '@storybook/html',
 };
