@@ -1,0 +1,27 @@
+:host() {
+    /* This works */
+    --color: black;
+}
+
+:host(.white) {
+    /* This works */
+    --color: white;
+}
+
+.selector {
+    /* This DOES NOT work in IE11 */
+    --color: red;
+}
+
+.btn {
+    background-color: aqua;
+}
+
+* {
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: aqua;
+    color: white;
+}
