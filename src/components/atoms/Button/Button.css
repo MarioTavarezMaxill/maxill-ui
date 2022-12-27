@@ -1,0 +1,13 @@
+/* @import '../../../../node_modules/bootstrap/scss/_buttons.scss'; */
+
+button {
+    background-color: aqua;
+}
+
+:host {
+    color: black;
+}
+
+* {
+    font-size: 0.5rem;
+}
