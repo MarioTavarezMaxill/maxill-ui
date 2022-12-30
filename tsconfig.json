@@ -14,5 +14,9 @@
 		"jsxFactory": "h"
 	},
 	"include": ["src"],
+	"baseUrl": "./src",
+	"paths": {
+		"@assets/*": ["assets/*"]
+	},
 	"exclude": ["node_modules"]
 }

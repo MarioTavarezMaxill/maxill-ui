@@ -1,0 +1,121 @@
+import { Meta, ColorPalette, ColorItem, Typeset } from '@storybook/addon-docs';
+
+import MaxiLogo from './assets/logo.svg';
+import Structure from './assets/structure.jpg';
+
+<Meta title='Typography' />
+
+# Typography
+
+export const typography = {
+	type: {
+		primary: '"Source Sans Pro"',
+	},
+	weight: {
+		regular: '400',
+		semibold: '600',
+		bold: '700',
+		extrabold: '800',
+		black: '900',
+	},
+	size: {
+		h1: 40,
+		h2: 32,
+		h3: 28,
+		h4: 24,
+		h5: 20,
+		h6: 18,
+		md: 16,
+	},
+};
+
+export const h1Heading = 'H1 Heading';
+
+export const h2Heading = 'H2 Heading';
+
+export const h3Heading = 'H3 Heading';
+
+export const h4Heading = 'H4 Heading';
+
+export const h5Heading = 'H5 Heading';
+
+export const h6Heading = 'H6 Heading';
+
+export const paragraphLead = 'Paragraph Lead';
+
+export const paragraphLeadBold = 'Paragraph Lead Bold';
+
+export const paragraph = 'Paragraph';
+
+export const paragraphSemiBold = 'Paragraph Semi Bold';
+
+**Font:** Source Sans Pro
+
+<Typeset
+	fontSizes={[Number(typography.size.h1)]}
+	fontWeight={typography.weight.black}
+	sampleText={h1Heading}
+	fontFamily={typography.type.primary}
+/>
+<Typeset
+	fontSizes={[Number(typography.size.h2)]}
+	fontWeight={typography.weight.black}
+	sampleText={h2Heading}
+	fontFamily={typography.type.primary}
+/>
+
+<Typeset
+	fontSizes={[Number(typography.size.h3)]}
+	fontWeight={typography.weight.black}
+	sampleText={h3Heading}
+	fontFamily={typography.type.primary}
+/>
+
+<Typeset
+	fontSizes={[Number(typography.size.h4)]}
+	fontWeight={typography.weight.black}
+	sampleText={h4Heading}
+	fontFamily={typography.type.primary}
+/>
+
+<Typeset
+	fontSizes={[Number(typography.size.h5)]}
+	fontWeight={typography.weight.black}
+	sampleText={h5Heading}
+	fontFamily={typography.type.primary}
+/>
+
+<Typeset
+	fontSizes={[Number(typography.size.h6)]}
+	fontWeight={typography.weight.black}
+	sampleText={h6Heading}
+	fontFamily={typography.type.primary}
+/>
+
+<Typeset
+	fontSizes={[Number(typography.size.h5)]}
+	fontWeight={typography.weight.regular}
+	sampleText={paragraphLead}
+	fontFamily={typography.type.primary}
+/>
+
+<Typeset
+	fontSizes={[Number(typography.size.h5)]}
+	fontWeight={typography.weight.bold}
+	sampleText={paragraphLeadBold}
+	fontFamily={typography.type.primary}
+/>
+
+<Typeset
+	fontSizes={[Number(typography.size.md)]}
+	fontWeight={typography.weight.regular}
+	sampleText={paragraph}
+	fontFamily={typography.type.primary}
+/>
+
+<Typeset
+	fontSizes={[Number(typography.size.md)]}
+	fontWeight={typography.weight.semibold}
+	sampleText={paragraphSemiBold}
+	fontFamily={typography.type.primary}
+/>

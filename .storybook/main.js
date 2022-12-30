@@ -9,4 +9,5 @@ module.exports = {
 		'storybook-addon-stencil',
 	],
 	framework: '@storybook/html',
+	staticDirs: ['../src/assets'],
 };

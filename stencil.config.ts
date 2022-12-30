@@ -1,8 +1,10 @@
 import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
+import { inlineSvg } from 'stencil-inline-svg';
 
 export const config: Config = {
 	namespace: 'maxill-ui',
+	globalStyle: 'src/global/global.scss',
 	outputTargets: [
 		{
 			type: 'dist',
@@ -16,11 +18,10 @@ export const config: Config = {
 		},
 		{
 			type: 'www',
-			serviceWorker: null, // disable service workers
+			serviceWorker: null,
 		},
 	],
-	plugins: [sass()],
-	globalStyle: './src/global/global.css',
+	plugins: [sass(), inlineSvg()],
 };
 
 export const devServer = {
