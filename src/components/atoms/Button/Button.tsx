@@ -1,24 +1,41 @@
-import { Component, h } from '@stencil/core';
-import ButtonProps, { Sizes, Variants } from './Button.types';
+import { Component, Prop, h } from '@stencil/core';
+import ButtonBaseProps, { Colors, Sizes, Variants } from './Button.types';
+import { getClass, getTypeOfContainer } from './utils';
+import { IconName } from '../Icon/Icon.types';
 
 @Component({
 	tag: 'button-maxll',
-	styleUrl: 'Button.css',
+	styleUrl: 'Button.module.scss',
 	shadow: true,
 })
-export class Button implements ButtonProps {
+export class Button implements ButtonBaseProps {
 	testId = 'ButtonComponent';
-	size = Sizes.Medium;
-	variant = Variants.Primary;
+
+	@Prop() size?: Sizes;
+	@Prop() variant?: Variants;
+	@Prop() color?: Colors;
+	@Prop() disabled?: boolean;
+	@Prop() icon?: IconName;
+	@Prop() local?: boolean = false;
+
 	render() {
+		const classes = getClass(this.size, this.variant, this.color);
+		const block = getTypeOfContainer(this.variant);
+		const isIcon = this.variant === Variants.Icon;
 		return (
-			<button
-				type='button'
-				class='btn btn-primary'
-				id={this.testId}
-				data-testid={this.testId}>
-				<slot />
-			</button>
+			<div class={block}>
+				<button
+					disabled={this.disabled}
+					type='button'
+					class={classes}
+					id={this.testId}
+					data-testid={this.testId}>
+					<div class={isIcon && 'btn-icon'}>
+						{isIcon && <icon-maxll name={this.icon} local={this.local} />}
+						<slot />
+					</div>
+				</button>
+			</div>
 		);
 	}
 }

@@ -1,0 +1,33 @@
+$maxi-blue: #0252BF;
+$maxi-blue-accent: #3577D2;
+$maxi-blue-accent-two: #043f8f;
+$maxi-blue-accent-three: #006CFF;
+$maxi-green: #458C44;
+$maxi-green-accent: #AAD156;
+
+//GrayScale
+$maxi-gray-100: #131313;
+$maxi-gray-80: #2c2b2c;
+$maxi-gray-60: #777777;
+$maxi-gray-40: #E0E1E0;
+$maxi-gray-20: #F5F5F5;
+$maxi-white: #ffffff;
+
+//Status Colors
+$maxi-success: #AAD156;
+$maxi-warning: #E19829;
+$maxi-danger: #C81010;
+$maxi-danger-2: #911E1E;
+
+
+
+$custom_colors: (
+    "maxi-blue": $maxi-blue,
+    "maxi-blue-accent": $maxi-blue-accent,
+    "maxi-blue-accent-two": $maxi-blue-accent-two,
+    "maxi-blue-accent-three": $maxi-blue-accent-three,
+    "maxi-green": $maxi-green,
+    "maxi-green-accent": $maxi-green-accent
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);

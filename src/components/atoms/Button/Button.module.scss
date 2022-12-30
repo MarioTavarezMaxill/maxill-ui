@@ -1,0 +1,10 @@
+@import '../../../global/global.scss';
+
+.btn-icon {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, auto);
+    icon-maxll {
+        margin-right: 0.5rem;
+    }
+}

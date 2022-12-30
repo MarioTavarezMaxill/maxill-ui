@@ -5,7 +5,7 @@
 		"type": "git",
 		"url": "https://github.com/MarioTavarezMaxill/maxill-ui"
 	},
-	"description": "Stencil Component Starter",
+	"description": "Maxill UI Component Library",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.js",
 	"es2015": "dist/esm/index.mjs",
@@ -19,10 +19,12 @@
 		"loader/"
 	],
 	"scripts": {
+		"test": "stencil test --spec --coverage",
+		"test-e2e": "stencil test --spec --e2e",
+		"test-e2e.watch": "stencil test --spec --e2e --coverage --watchAll",
+		"test.watch": "stencil test --spec --coverage --watchAll",
 		"build": "stencil build --docs",
 		"start": "stencil build --dev --watch --serve",
-		"test": "stencil test --spec --e2e",
-		"test.watch": "stencil test --spec --e2e --watchAll",
 		"generate": "stencil generate",
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook",
@@ -36,6 +38,7 @@
 	},
 	"dependencies": {
 		"@stencil/core": "^2.13.0",
+		"@types/npm": "^7.19.0",
 		"bootstrap": "^5.3.0-alpha1"
 	},
 	"devDependencies": {
@@ -54,20 +57,22 @@
 		"@storybook/html": "^6.5.15",
 		"@storybook/manager-webpack4": "^6.5.15",
 		"@storybook/testing-library": "^0.0.13",
-		"@types/jest": "^27.0.3",
+		"@types/jest": "^27.5.2",
 		"@typescript-eslint/eslint-plugin": "^5.47.1",
 		"babel-loader": "^8.3.0",
+		"chromatic": "^6.14.0",
 		"eslint": "^8.30.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-prettier": "^4.2.1",
 		"husky": "^8.0.2",
-		"jest": "^27.4.5",
-		"jest-cli": "^27.4.5",
+		"jest": "^27.5.1",
+		"jest-cli": "^27.5.1",
 		"lint-staged": "^13.1.0",
 		"prettier": "^2.8.1",
 		"prettier-eslint": "^15.0.1",
 		"puppeteer": "^10.0.0",
 		"standard-version": "^9.5.0",
+		"stencil-inline-svg": "^1.1.0",
 		"storybook-addon-stencil": "^0.1.14",
 		"webpack-merge": "^5.8.0"
 	},
