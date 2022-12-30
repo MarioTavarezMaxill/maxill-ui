@@ -5,8 +5,22 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Colors, Sizes, Variants } from "./components/atoms/Button/Button.types";
+import { Colors as Colors1, IconName, Variants as Variants1 } from "./components/atoms/Icon/Icon.types";
 export namespace Components {
     interface ButtonMaxll {
+        "color"?: Colors;
+        "disabled"?: boolean;
+        "icon"?: IconName;
+        "local"?: boolean;
+        "size"?: Sizes;
+        "variant"?: Variants;
+    }
+    interface IconMaxll {
+        "color"?: Colors1;
+        "local"?: boolean;
+        "name": IconName;
+        "variant"?: Variants1;
     }
 }
 declare global {
@@ -16,15 +30,35 @@ declare global {
         prototype: HTMLButtonMaxllElement;
         new (): HTMLButtonMaxllElement;
     };
+    interface HTMLIconMaxllElement extends Components.IconMaxll, HTMLStencilElement {
+    }
+    var HTMLIconMaxllElement: {
+        prototype: HTMLIconMaxllElement;
+        new (): HTMLIconMaxllElement;
+    };
     interface HTMLElementTagNameMap {
         "button-maxll": HTMLButtonMaxllElement;
+        "icon-maxll": HTMLIconMaxllElement;
     }
 }
 declare namespace LocalJSX {
     interface ButtonMaxll {
+        "color"?: Colors;
+        "disabled"?: boolean;
+        "icon"?: IconName;
+        "local"?: boolean;
+        "size"?: Sizes;
+        "variant"?: Variants;
+    }
+    interface IconMaxll {
+        "color"?: Colors1;
+        "local"?: boolean;
+        "name"?: IconName;
+        "variant"?: Variants1;
     }
     interface IntrinsicElements {
         "button-maxll": ButtonMaxll;
+        "icon-maxll": IconMaxll;
     }
 }
 export { LocalJSX as JSX };
@@ -32,6 +66,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "button-maxll": LocalJSX.ButtonMaxll & JSXBase.HTMLAttributes<HTMLButtonMaxllElement>;
+            "icon-maxll": LocalJSX.IconMaxll & JSXBase.HTMLAttributes<HTMLIconMaxllElement>;
         }
     }
 }
