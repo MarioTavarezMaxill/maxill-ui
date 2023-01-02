@@ -16,7 +16,6 @@ export class Button implements ButtonBaseProps {
 	@Prop() color?: Colors;
 	@Prop() disabled?: boolean;
 	@Prop() icon?: IconName;
-	@Prop() local?: boolean = false;
 
 	render() {
 		const classes = getClass(this.size, this.variant, this.color);
@@ -31,7 +30,7 @@ export class Button implements ButtonBaseProps {
 					id={this.testId}
 					data-testid={this.testId}>
 					<div class={isIcon && 'btn-icon'}>
-						{isIcon && <icon-maxll name={this.icon} local={this.local} />}
+						{isIcon && <icon-maxll name={this.icon} />}
 						<slot />
 					</div>
 				</button>
