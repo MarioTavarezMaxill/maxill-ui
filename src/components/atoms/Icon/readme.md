@@ -7,12 +7,12 @@
 
 ## Properties
 
-| Property  | Attribute | Description | Type                                                                    | Default               |
-| --------- | --------- | ----------- | ----------------------------------------------------------------------- | --------------------- |
-| `color`   | `color`   |             | `Colors.BLACK \| Colors.GRAY \| Colors.WHITE`                           | `Colors.BLACK`        |
-| `local`   | `local`   |             | `boolean`                                                               | `false`               |
-| `name`    | `name`    |             | `IconName`                                                              | `IconName.ARROW_LEFT` |
-| `variant` | `variant` |             | `Variants.LIGHT \| Variants.REGULAR \| Variants.SHARP \| Variants.THIN` | `Variants.REGULAR`    |
+| Property  | Attribute | Description | Type                                                                    | Default              |
+| --------- | --------- | ----------- | ----------------------------------------------------------------------- | -------------------- |
+| `color`   | `color`   |             | `Colors.Black \| Colors.Gray \| Colors.White`                           | `Colors.Black`       |
+| `local`   | `local`   |             | `boolean`                                                               | `false`              |
+| `name`    | `name`    |             | `IconName`                                                              | `IconName.ArrowLeft` |
+| `variant` | `variant` |             | `Variants.Light \| Variants.Regular \| Variants.Sharp \| Variants.Thin` | `Variants.Regular`   |
 
 
 ## Dependencies

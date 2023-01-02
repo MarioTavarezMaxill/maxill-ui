@@ -25,13 +25,6 @@ export default {
 				options: Object.values(Colors),
 			},
 		},
-		local: {
-			description:
-				'This variable is only set for storybook purposes, it validates if you have to do an import at the level of static directories',
-			control: {
-				type: 'boolean',
-			},
-		},
 	},
 };
 const Template = ({ name, variant, color, local }) =>
@@ -39,8 +32,7 @@ const Template = ({ name, variant, color, local }) =>
 
 export const Default = Template.bind({});
 Default.args = {
-	name: IconName.ARROW_LEFT,
-	variant: Variants.REGULAR,
-	color: Colors.BLACK,
-	local: true,
+	name: IconName.ArrowLeft,
+	variant: Variants.Regular,
+	color: Colors.Black,
 };

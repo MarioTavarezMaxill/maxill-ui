@@ -14,9 +14,9 @@ describe('Icon Atom Component', () => {
 			html: `<div></div>`,
 		});
 		const component = page.doc.createElement(htmlElement);
-		component.name = IconName.ARROW_LEFT;
-		component.variant = Variants.REGULAR;
-		component.color = Colors.BLACK;
+		component.name = IconName.ArrowLeft;
+		component.variant = Variants.Regular;
+		component.color = Colors.Black;
 		page.root.appendChild(component);
 		await page.waitForChanges();
 		expect(page).toBeTruthy();
