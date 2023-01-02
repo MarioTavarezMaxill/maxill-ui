@@ -12,7 +12,6 @@ export namespace Components {
         "color"?: Colors;
         "disabled"?: boolean;
         "icon"?: IconName;
-        "local"?: boolean;
         "size"?: Sizes;
         "variant"?: Variants;
     }
@@ -46,7 +45,6 @@ declare namespace LocalJSX {
         "color"?: Colors;
         "disabled"?: boolean;
         "icon"?: IconName;
-        "local"?: boolean;
         "size"?: Sizes;
         "variant"?: Variants;
     }

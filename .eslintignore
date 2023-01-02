@@ -3,3 +3,6 @@ package-lock.json
 dist
 www
 loader
+assets
+angular-component-lib
+storybook-static

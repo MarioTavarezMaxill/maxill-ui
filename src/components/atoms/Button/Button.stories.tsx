@@ -64,6 +64,5 @@ IconButton.args = {
 	...Default.args,
 	variant: Variants.Icon,
 	color: Colors.Light,
-	icon: IconName.BELL,
-	local: true,
+	icon: IconName.Bell,
 };
